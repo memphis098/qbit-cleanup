@@ -1,0 +1,8 @@
+[Unit]
+Description=qBittorrent cleanup script
+After=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/opt/qbit-cleanup/qbit-cleanup.env
+ExecStart=/usr/bin/python3 /opt/qbit-cleanup/qbit-cleanup.py
