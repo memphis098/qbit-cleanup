@@ -4,6 +4,9 @@ A simple Python script for removing stalled or no-seed incomplete qBittorrent do
 
 The script is designed to be readable. All logic is contained in `qbit-cleanup.py`, and all settings are controlled through `qbit-cleanup.env`.
 
+## Warning
+Start with DRY_RUN=true and DELETE_FILES=false
+
 ## Features
 
 - Tracks stalled or no-seed incomplete torrents
